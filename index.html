@@ -1,0 +1,208 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Kofesko</title>
+	<link rel="shortcut icon" href="./img/kafa2.png"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/foundation.css" />
+	<link rel="stylesheet" href="./css/index.css" />
+	<link rel="stylesheet" href="./foundation-icons/foundation-icons.css" />
+	<script src="./js/kontakt.js"></script>
+    <script src="./js/vendor/modernizr.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+	  var myLatLng={lat:44.806822,lng:20.467633}
+        var mapCanvas = document.getElementById('map');
+        varns = {
+          center: myLatLng,
+          zoom: 18,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+		var marker=new google.maps.Marker({
+		position: myLatLng,
+		map:map,
+		title:'Foundation!'
+		});
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </head>
+  <body>
+    
+   
+	<div class="fixed" >
+	
+	<!-- navbar-->
+	<nav class="top-bar " data-topbar role="navigation">
+		<ul class="title-area ">
+			<li class="name">
+				<h1><a href="#">Kofesko</a></h1>
+			</li>
+			<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+			<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+		</ul>
+
+		<section class="top-bar-section ">
+		<!-- Right Nav Section -->
+		<ul class="right ">
+		
+			<li><a href="#oNama">O nama</a></li>
+			<li><a href="#proizvodi">Proizvodi</a></li>
+			<li><a href="#zaposleni">Zaposleni</a></li>
+			<li><a href="#lokacija">Lokacija</a></li>
+			<li><a href="#kontakt">Kontakt</a></li>
+			
+		</ul>
+		</section>
+	</nav>
+	</div>
+	
+	
+	<div class="row coverImage">
+		<div class="shadow"></div>
+		<p id="headline">Kofesko</p>
+		<p id="subHeadline">Have a nice coffee</p>
+	</div>
+		
+	<div class="row">
+	<h1 class="header" id="oNama" >O nama</h1>
+	<p class="onamaTekst">
+		Pre nego što dođe do vašeg stola, naša kafa prolazi dugačak put. Od plantaže u najudaljenijim krajevima sveta, preko ruku farmera i berača plodova, do prženja i najfinijeg mlevenja u našim mlinovima, a ipak, svaka šoljica znači tek jedan novi početak uživanja u danu pred nama.
+
+		Iako veoma mlad brend, za manje od tri godine dokazanim kvalitetom i konstantnim inovacijama postali smo jedan od najbrže rastućih lanaca kafeterija u Srbiji, koji u svom asortimanu za sada nudi više od 15 jedinstvenih vrsta kafa sa svih strana sveta, među kojima su i veoma retki ukusi, ekskluzivni u ovom delu Evrope.
+		
+		Gosti Kafeterije se svakog jutra mogu razbuditi uz ukuse Indija ili Brazil espresa, poboljšati produktivnost uz ukuse Kolumbije, Kenije ili Etiopije, uživati u specijalno pripremljenim blendovima ili završiti dan uz bezkofeinske napitke.
+	</p>	
+	<br><br>
+	<!--Proizvodi-->
+	<hr>
+	<div class="row" id="proizvodi">
+		<h1 class="header" >Proizvodi</h1>
+	</div>
+	
+	<div class="row ">
+		
+	
+		<div class="large-4 columns proizvod" id="cappuccino">
+			<div class="backgroundHover">
+				<p class="backgroundHoverText">cappuccino</p>
+			</div>
+		</div>
+		
+		<div class="large-4 columns proizvod" id="blackcoffee">
+			<div class="backgroundHover">
+				<p class="backgroundHoverText">black coffee</p>
+			</div>
+		</div>
+		
+		<div class="large-4 end columns proizvod" id="espresso">
+			<div class="backgroundHover">
+				<p class="backgroundHoverText">espresso</p>
+			</div>
+		</div>
+	</div>
+	<br><br>
+	<!--Zaposleni-->
+	<hr>
+	<div class="row">
+		<h1 class="header" id="zaposleni">Zaposleni</h1>
+	</div>
+	
+	
+	<div class="row ">
+	
+		<div class="large-4 small-12 columns zaposleni" id="PeraPeric">
+			<center>
+			<img class="zaposleniImg" src="./img/konobar.jpg"/>
+			</center>
+			
+			<h3 class="zaposleniIme">KONOBAR</h3>
+			
+			<p class="zaposleniText">Osmeh na vašem licu podjednako nam je važan kao i detaljno poznavanje svake kafe ili obroka koje ponudite našim gostima. Ukoliko odlučite da se pridružite timu koji predstavlja prvi kontakt posetilaca sa svim onim što jesmo, očekuje vas nesvakidašnje putovanje kroz svet kafe i potpuno novih iskustava. 
+			</p>
+			
+		</div>
+		
+		<div class="large-4 small-12 columns zaposleni" id="PeraPeric">
+			<center>
+			<img class="zaposleniImg" src="./img/menadzer.png"/>
+			</center>
+			
+			<h3 class="zaposleniIme">MENADŽER</h3>
+			
+			<p class="zaposleniText">Tražimo iskusnog i energičnog menadžera da se priključi našem rastućem timu.
+				Idealan kandidat treba da ima pozitivan stav i da bude strastven prema svemu u vezi sa kafom.
+				Da bi bio uspešan na ovoj poziciji menadžer lokala treba da poseduje liderske i organizacione sposobnosti, veštine upravljanja vremenom i odnos sa kupcima, poznavanje metoda kuvanja i pripreme specijalnih pića. 
+			</p>
+			
+		</div>
+		
+		<div class="large-4 small-12 columns zaposleni" id="PeraPeric">
+			<center>
+			<img class="zaposleniImg" src="./img/barista.jpg"/>
+			</center>
+			
+			<h3 class="zaposleniIme">BARISTA</h3>
+			
+			<p class="zaposleniText">Barista je osoba koja se priprema i služi napitke za kafu sa espresom. U Sjedinjenim Državama izraz barista se takođe često primjenjuje na zaposlene u kafićima koji pripremaju espresso i redovna napitka za kafu. Iako se termin barista tehnički odnosi na nekoga ko je profesionalno obučen za pripremu espresa, može se koristiti i za opisivanje bilo koga sa visokim nivoom veštine u izradi espresso snimaka i espresso napitaka. 
+			</p>
+			
+		</div>
+		
+	</div>
+	
+	<!--Zaposleni-->
+	<br><br>
+	<hr>
+	
+	<div class="row">
+	<h1 class="header" id="lokacija" >Lokacija</h1>
+	<center>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2856.865722880219!2d19.881725314903957!3d44.271582020242164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4759ed098201fd25%3A0x9b6f82b90102f3fc!2sKofesko!5e0!3m2!1ssr!2srs!4v1613504021210!5m2!1ssr!2srs" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" id="loc"></iframe>
+	<!-- <div id="map"></div>	 -->
+	</center>
+	</div>
+		<br><br>
+		<hr>
+	<div class="row" id="kontakt">
+	<h1 class="header">Kontakt</h1>
+	</div>
+	<form name="myForm"  onsubmit="return validateForm()" method="post">
+		<div class="footer-center" data-equalizer-watch>
+			<div class="baseline">
+			  <div class="newsletter">
+				<div class="input-group">
+					<label>Vaše ime</label>
+				  <input class="input-group-field" type="text" placeholder="Ime" name="fname" required>
+				 <label>Vaša email adresa</label>
+				  <input class="input-group-field" type="text" placeholder="Email address" name="femail" required>
+				  <label>Vaša poruka</label>
+				  <textarea placeholder="Poruka" cols="80" rows="4" name="farea" required></textarea>
+				</div>
+				<input type="submit" value="Pošaljite poruku" id="posalji">
+			  </div>
+			</div>
+		  </div>
+		</form>
+	<br><br><br>
+	<hr>
+	<center>
+		<div class="rounded-social-buttons">
+			<a class="social-button facebook" href="https://www.facebook.com/pages/category/Coffee-Shop/Kofesko-1540563156259856/"></a>
+			<a class="social-button twitter" href="https://twitter.com/ljubitelji_kafe"></a>
+			<a class="social-button youtube" href="https://www.youtube.com/watch?v=iQyHeWaJIec&ab_channel=TheDomesticGeek"></a>
+			<a class="social-button instagram" href="https://www.instagram.com/kofesko/"></a>
+		  </div>		  
+	</center>
+			
+		 <script src="./js/vendor/jquery.js"></script>
+    <script src="./js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
